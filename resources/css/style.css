@@ -42,7 +42,6 @@ nav span {
 }
 
 div {
-	border: 1px solid black;
 	display: block;
 }
 
@@ -81,31 +80,29 @@ p {
 .image-content {
 	background-image: url(../images/img-story-main.png);
 	width: 630px;
-	height: 300px;
 	margin-top: 0;
 	font-size: 40px;
-}
-.image-content span {	
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	height: 300px;	
 	font-family: Georgia;
 	color: white;
 	font-weight: bold;
-	text-align: left;
 }
 
 .fall-cancelled.image-content {
 	background-image: url(../images/img-story-2.png);
 	height: 300px;
 	margin-top: 15px;
-}
-
-.fall-canceled.image-content span {
+	width: 100%;
+	flex-direction: column;
 	display: flex;
+	font-size: 30px;
+	text-align: center;
 	font-family: Georgia;
 	font-weight: bold;
-	font-size: 30px;
 	color: white;
-	text-align: center;
-	justify-content: center;
 }
 
 .pop-culture.image-content {
@@ -114,15 +111,39 @@ p {
 	margin-top: 15px;
 	font-weight: bold;
 	font-size: 30px;
+	font-family: Georgia;
 	color: white;
 	text-align: center;
+	width: 100%;
 }
 
 .cat-ceo.image-content {
 	background-image: url(../images/img-story-1.png);
 	height: 300px;
 	margin-top: 15px;
-	width: 256px;
+	width: 100%;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	font-family: Georgia;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.stories {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 17px;
+}
+
+.story {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.stories.text-content {
+	height: 250px;
 }
